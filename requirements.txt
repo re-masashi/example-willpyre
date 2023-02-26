@@ -1,0 +1,5 @@
+uvicorn # you can use uvicorn[standard]
+jinja2
+willpyre
+sqlalchemy
+itsdangerous

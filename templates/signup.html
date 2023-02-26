@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Book Store</li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Initiative</a></li>
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <br>
+
+    <div class="login-box">
+      <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+          <div class="login-box-form-section">
+            <h1 class="login-box-title">Sign up</h1>
+            <form  action="/signup" method="post">
+              <input class="login-box-input" type="text" name="username" placeholder="John Doe" />
+              <input class="login-box-input" type="text" name="tag" placeholder="@usertag" />
+              <input class="login-box-input" type="password" name="password" placeholder="Password" />
+              <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+            </form>
+          </div>
+          <div class="or">OR</div>
+        </div>
+        <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+          <div class="login-box-social-section-inner">
+            <span class="login-box-social-headline">Sign in with<br />your social network</span>
+            <a class="login-box-social-button-facebook">Log in with facebook</a>
+            <a class="login-box-social-button-twitter">Log in with Twitter</a>
+            <a class="login-box-social-button-google">Log in with Google+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

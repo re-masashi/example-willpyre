@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Book Store</li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Initiative</a></li>
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <br>
+
+    <form class="log-in-form" method="post" action="/login">
+      <h4 class="text-center">Log in with you email account</h4>
+      <label>Usertag
+        <input type="text" name="tag" placeholder="@somebody">
+      </label>
+      <label>Password
+        <input type="password" name="password" id="password" placeholder="Password">
+      </label>
+      <input id="show-password" onclick="togglepass()" type="checkbox"><label for="show-password">Show password</label>
+      <p><input type="submit" class="button expanded" value="Log in"></input></p>
+      <p class="text-center"><a href="/signup">No account? Create one.</a></p>
+    </form>
+    <script type="text/javascript">
+      let togglepass = () => {
+        let elem = document.getElementById("password");
+        if (elem.type === "password") {
+          elem.type = "text";
+        } else {
+          elem.type = "password";
+        }
+      }
+    </script>
+
+  </body>
+</html>
