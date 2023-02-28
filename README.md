@@ -10,7 +10,7 @@ This app uses:
 
 
 **Note:** This app has uvicorn as a dependency but there are some [problems](https://github.com/encode/uvicorn/discussions/1876).
-    If your app seems to behave wierd, kindly use [Hypercorn](https://gitub.com/pgjones/hypercorn).
+    If your app seems to behave wierd, kindly use [Hypercorn](https://github.com/pgjones/hypercorn).
 
 ### Run
 
